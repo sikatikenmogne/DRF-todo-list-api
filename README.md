@@ -41,6 +41,17 @@ You can access the API at http://127.0.0.1:8000/. The available endpoints are:
 - `PUT /todos/{id}/` - Update a specific todo item
 - `DELETE /todos/{id}/` - Delete a specific todo item
 
+## Features
+
+- [x] User registration to create a new user
+- [x] Login endpoint to authenticate the user and generate a token
+- [ ] CRUD operations for managing the to-do list
+- [ ] Implement user authentication to allow only authorized users to access the to-do list
+- [ ] Implement error handling and security measures
+- [ ] Use a database to store the user and to-do list data (you can use any database of your choice)
+- [ ] Implement proper data validation
+- [ ] Implement pagination and filtering for the to-do list
+
 ## Pre-commit Hooks
 
 This project uses pre-commit hooks to ensure code quality. The hooks are configured in the .pre-commit-config.yaml file. To install the hooks, run:
