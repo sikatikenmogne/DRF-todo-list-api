@@ -1,6 +1,14 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
+from task.models import Task
+
+
+class TaskSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Task
+        fields = ["id", "title", "description"]
+
 
 class UserSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
